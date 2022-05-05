@@ -6,7 +6,7 @@
 /*   By: minjinki <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 17:21:54 by minjinki          #+#    #+#             */
-/*   Updated: 2022/05/04 16:58:34 by minjinki         ###   ########.fr       */
+/*   Updated: 2022/05/05 17:07:01 by minjinki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,8 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	if (size <= 0)
 		len = 0;
 	p_arr = (char *)malloc(sizeof(char) * (len + 1));
+	if (!p_arr)
+		return (0);
 	i = -1;
 	while (++i < len + 1)
 		p_arr[i] = 0;
