@@ -1,0 +1,4 @@
+c08_main.c
+*.out
+test*
+ft_stock_str.h
